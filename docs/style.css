@@ -1,0 +1,103 @@
+/* estilo para la imagen*/
+div img {
+    width: 15%;
+    border: 5px dotted #000;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+::selection {
+    color: rgb(223, 150, 248);
+    background-color: rgb(205, 207, 245);
+}
+
+header nav ul li a {
+    cursor: crosshair;
+}
+
+.caja {
+    width: 30%;
+    border: 5px solid rgb(136, 149, 233);
+    gap: 20px;
+    display: block;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(127, 127, 247);
+    display: flex;
+    justify-content:baseline;
+    position: relative;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    text-align: center;
+    margin: 30px;
+}
+
+footer {
+    background-color: rgb(200, 247, 255);
+    display: flex;
+    justify-content: space-around;
+}
+footer ul {
+    display: flex;
+}
+footer ul li {
+    text-align: center;
+    margin: 30px;
+}
+main {
+    display: flex;
+    background-color: azure;
+}
+
+.menu {
+    background-color: rgb(250, 223, 197);
+    flex: 20%;
+    margin: 5px;
+}
+
+.contenido {
+    background-color: rgb(123, 202, 187);
+    flex: 60%;
+}
+
+.menu ul li {
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: blueviolet;
+    }
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+    }
+    .caja{
+        width: 100%;
+    }
+    
+}
